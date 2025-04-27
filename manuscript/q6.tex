@@ -1,4 +1,4 @@
-\section[q6]{Question 6}
+\section[Question 6]{Question 6} \label{sec:q6}
 \textit{We are concerned that population size might modify the relationship between who\_region
 and the highest air pollution exposure category you created. Determine if there is
 any evidence of effect modification.}
@@ -8,8 +8,9 @@ any evidence of effect modification.}
 between who\_region and highest air pollution exposure category you cre
 ated, grouped by population size category you created in Assignment 1.
 If you have more than 3 population size categories, use the first three categories
-for this analysis.}
+for this analysis.}\\
 
+\noindent Tables \ref{tab:pop500000}, \ref{tab:pop1000000}, and \ref{tab:pop1500000} show the relationship between who\_region and the exposure category associated with more than $30 \mu g/m^3 $ of $PM_{2.5}$, grouped by population size categories respectively. Only the first three population categories are explored as requested by the assignment. The tables show the number of individuals in the $30 \mu g/m^3 $ of $PM_{2.5}$ exposure category (1) or with less than $30 \mu g/m^3 $ of $PM_{2.5}$ (0). The prevalence of $ > 30 \mu g/m^3 $ of $PM_{2.5}$ exposure category is also shown in each table.
 
 \begin{table}[H]
     \centering
@@ -17,12 +18,12 @@ for this analysis.}
         \toprule
         population & who\_region & 0 & 1 & prevalence \\
         \midrule
-        0-500000 & 1\_Afr & 0 & 0 & 0 \\
-        0-500000 & 2\_Amr & 138 & 0 & 0 \\
-        0-500000 & 3\_Sear & 0 & 0 & 0 \\
-        0-500000 & 4\_Eur & 195 & 7 & 0.0347 \\
-        0-500000 & 5\_Emr & 0 & 0 & 0 \\
-        0-500000 & 7\_NonMS & 0 & 0 & 0 \\
+        0-500000 & 1\_Afr & 0 & 0 & 0.000 \\
+        0-500000 & 2\_Amr & 138 & 0 & 0.000 \\
+        0-500000 & 3\_Sear & 0 & 0 & 0.000 \\
+        0-500000 & 4\_Eur & 195 & 7 & 0.035 \\
+        0-500000 & 5\_Emr & 0 & 0 & 0.000 \\
+        0-500000 & 7\_NonMS & 0 & 0 & 0.000 \\
         \bottomrule
     \end{tabular}
 \caption{Max air pollution exposure by WHO region (population size 0-500000).}
@@ -35,12 +36,12 @@ for this analysis.}
         \toprule
         population & who\_region & 0 & 1 & prevalence \\
         \midrule
-        500000-1000000 & 1\_Afr & 0 & 0 & 0 \\
-        500000-1000000 & 2\_Amr & 6 & 0 & 0 \\
-        500000-1000000 & 3\_Sear & 0 & 0 & 0 \\
-        500000-1000000 & 4\_Eur & 24 & 1 & 0.0400 \\
-        500000-1000000 & 5\_Emr & 0 & 0 & 0 \\
-        500000-1000000 & 7\_NonMS & 0 & 0 & 0 \\
+        500,000-1,000,000 & 1\_Afr & 0 & 0 & 0.000 \\
+        500,000-1,000,000 & 2\_Amr & 6 & 0 & 0.000 \\
+        500,000-1,000,000 & 3\_Sear & 0 & 0 & 0.000 \\
+        500,000-1,000,000 & 4\_Eur & 24 & 1 & 0.040 \\
+        500,000-1,000,000 & 5\_Emr & 0 & 0 & 0.000 \\
+        500,000-1,000,000 & 7\_NonMS & 0 & 0 & 0.000 \\
         \bottomrule
     \end{tabular}
 \caption{Max air pollution exposure by WHO region (population size 500000-1000000).}
@@ -53,12 +54,12 @@ for this analysis.}
         \toprule
         population & who\_region & 0 & 1 & prevalence \\
         \midrule
-        1000000-1500000 & 1\_Afr & 0 & 0 & 0 \\
-        1000000-1500000 & 2\_Amr & 4 & 0 & 0 \\
-        1000000-1500000 & 3\_Sear & 0 & 0 & 0 \\
-        1000000-1500000 & 4\_Eur & 5 & 1 & 0.1667 \\
-        1000000-1500000 & 5\_Emr & 0 & 1 & 1 \\
-        1000000-1500000 & 7\_NonMS & 0 & 0 & 0 \\
+        1,000,000-1,500,000 & 1\_Afr & 0 & 0 & 0.000 \\
+        1,000,000-1,500,000 & 2\_Amr & 4 & 0 & 0.000 \\
+        1,000,000-1,500,000 & 3\_Sear & 0 & 0 & 0.000 \\
+        1,000,000-1,500,000 & 4\_Eur & 5 & 1 & 0.167 \\
+        1,000,000-1,500,000 & 5\_Emr & 0 & 1 & 1.000 \\
+        1,000,000-1,500,000 & 7\_NonMS & 0 & 0 & 0.000 \\
         \bottomrule
     \end{tabular}
 \caption{Max air pollution exposure by WHO region (population size 1000000-1500000).}
@@ -72,38 +73,66 @@ created in Assignment 1. Be sure to specify which groups (4\_Eur or 1\_Afr)
 you are treating as the exposed and unexposed groups. Your outcome should
 be highest air pollution exposure category you created.}
 
+\noindent I understand that the assignmnet requires a prevalence ratio between 4\_Eur and 1\_Afr. In Section \ref{sec:q5}, I calculated the prevalence ratio between 4\_Eur and 1\_Afr for 2018 accross all population sizes. The data has only two cities for 1\_Afr in the time period. One of the two is excluded from population size brackets we are investigating. There is therefore  no cities with a population in the range we are investigating (0 - 1.5 million) and $PM_{2.5}$ of more than $30 \mu g/m^3 $. The prevalence for 1\_Afr is 0, which makes the prevalence ratio for the three population sizes 0. \\
+
+
+\noindent I will therefore use prevalence for 4\_Eur to illustrate my understanding of effect modification between population categories for 4\_Eur.
+
+\begin{itemize}
+    \item Prevalence for 4\_Eur in population size 0-500,000 is 7/202 = 0.035.
+    \item Prevalence for 4\_Eur in population size 500,000-1,000,000 is 1/25 = 0.040.
+    \item Prevalence for 4\_Eur in population size 1,000,000-1,500,000 is 1/6 = 0.167.
+\end{itemize}
+
+\noindent This indicates that the prevalence of $PM_{2.5}$ concentration of more than $30 \mu g/m^3 $ is increasing with population size in the 4\_Eur region. 
+
 \subsubsection{Question 6.b.ii}
-\textit{To do this, calculate the prevalence ratio in the three population size cat-
-egories (you can do this by hand or in your software).
+\textit{To do this, calculate the prevalence ratio in the three population size categories (you can do this by hand or in your software).
 Report whether the association between who\_region and highest air
 pollution exposure category you created is statistically significant in each
 of the three population size categories by using 95\% confidence intervals
 or by conducting chi-squared tests of the association in each of the three
 groups. Write out your answer for each group in a sentence (do not just
-report the numbers).}
+report the numbers).}\\
+
+\noindent I used Chi-squared to test if the association betweem 4\_Eur and $PM_{2.5}$ concentration of more than $30 \mu g/m^3 $ exposure is statistically significant in each of the three population categories. \\
+
+\begin{itemize}
+    \item $H_0$ : The distribution between high exposure and no exposure is as expected (assuming equal distribution).
+    \item $H_A$ : The distribution between high exposure and no exposure is not as expected.
+\end{itemize}
+
+
+\noindent Table \ref{tab:chi2_popsize} shows the results of the Chi-squared test for each population size bin. The $p$-value is less than 0.05 for the first two population bins (0-0.5 million and 0.5-1 million). This indicates that there is an association between population size and $PM_{2.5}$ concentration of more than $30 \mu g/m^3 $. The $p$-value is greater than 0.05 for a population of between 1 million and 1,5 million.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lrr}
+        \toprule
+        Population bin & $\chi^2$ & p-value \\
+        \midrule
+        0--500,000 & 174.97 & $6.08 \times 10^{-40}$ \\
+        500,000--1,000,000 & 21.16 & $4.22 \times 10^{-6}$ \\
+        1,000,000--1,500,000 & 2.67 & 0.102 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Chi-squared test results for association between 4\_Eur and $PM_{2.5}$ concentration of more than $30 \mu g/m^3 $ exposure by population size category.}
+    \label{tab:chi2_popsize}
+\end{table}
 
 
 \subsubsection{Question 6.b}
 \textit{Does population size appear to be modifying the effect of who\_region
-on highest air pollution exposure category you created? Justify your an-
-swer using the information and results calculated above. (3)
-Biostatistics 1: Assignment 2 5 of 6}
+on highest air pollution exposure category you created? Justify your answer using the information and results calculated above.} \\
+
+\noindent Yes, the prevalence of $PM_{2.5}$ concentration of more than $30 \mu g/m^3 $ exposure is different in the three categories. It increases gradually as population size increases.
 
 \subsection{Question 6.c}
 \textit{Based on your analysis and interpretation above, select which of the results
-from the list below you would report in your manuscript and why.}
+from the list below you would report in your manuscript and why.}\\
 
-\subsubsection{Question 6.c.i}
-\textit{Just the crude overall prevalence ratio.}
-
-\subsubsection{Question 6.c.ii}
-\textit{The stratified prevalence ratios (in each population category).}
-
-\subsubsection{Question 6.c.iii}
-\textit{An adjusted prevalence ratio like the Mantel Haenszel adjusted association (adjusted for population category).
-Hint: You need to filter your data to include just one population category at a time then do the next population category to do these grouped
-analyses
-}
+\noindent \textbf{The stratified prevalence ratios (in each population category).}
+Population size is and effect modifier, not a confounder. The prevalence ratios are different in the three population size bins.
 
 
 \newpage

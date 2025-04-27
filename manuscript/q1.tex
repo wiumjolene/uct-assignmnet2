@@ -1,37 +1,35 @@
-\section[q1]{Question 1}
+\section[Question 1]{Question 1}
 \subsection{Question 1.a}
 \textit{In a single table reporting relevant descriptive statistics in the overall sample
 and by year [as a categorical variable, pick two years to perform the analysis].
 Include summary statistics as you did in assignment 1. However, you should
 include p-values in your table assessing the difference in the following variables
-by year.}
+by year.}\\
+
+\noindent Table \ref{tab:20152020_descriptives} shows relevant descriptive statistics, mean and standard deviations, for $PM_{10}$, $PM_{2.5}$, $NO_2$, and $PM_{2.5}tempcov$ concentrations. 
+
 \begin{table}[ht]
     \centering
     \begin{tabular}{lcccc}
         \toprule
-        Variable & Overall & 2015 & 2020 & P-value \\
+        Variable & Overall & 2015 & 2020 & p-value \\
         \midrule
-        pm10\_concentration & 34.20 ± 36.41 & 37.76 ± 39.33 & 30.78 ± 33.03 & 0.00000 \\
-        pm25\_concentration & 13.91 ± 15.25 & 15.11 ± 18.13 & 12.98 ± 12.53 & 0.00925 \\
-        no2\_concentration & 15.90 ± 10.61 & 18.16 ± 11.52 & 14.20 ± 9.52 & 0.00000 \\
-        pm25\_tempcov & 87.73 ± 22.05 & 86.04 ± 22.99 & 89.17 ± 21.12 & 0.00783 \\
+        $PM_{10}$ & 34.20 $\pm$ 36.41 & 37.76 $\pm$ 39.33 & 30.78 $\pm$ 33.03 & 0.00000 \\
+        $PM_{2.5}$ & 13.91 $\pm$ 15.25 & 15.11 $\pm$ 18.13 & 12.98 $\pm$ 12.53 & 0.00925 \\
+        $NO_2$ & 15.90 $\pm$ 10.61 & 18.16 $\pm$ 11.52 & 14.20 $\pm$ 9.52 & 0.00000 \\
+        $PM_{2.5}tempcov$ & 87.73 $\pm$ 22.05 & 86.04 $\pm$ 22.99 & 89.17 $\pm$ 21.12 & 0.00783 \\
         \bottomrule
 \end{tabular}
 \caption{Descriptive statistics for WHO regions overall and by year}
+\label{tab:20152020_descriptives}
 \end{table}
-
-
 
 
 \subsection{Question 1.b}
 \textit{Write a short paragraph describing any differences you observe in the above
-variables across the two years you have selected to analyse}
+variables across the two years you have selected to analyse} \\
 
-\begin{itemize}
-    \item The mean pm10 concentration decreased from 37.76 in 2015 to 30.78 in 2020. The P-Value shows that we  reject the null hypothesis, indicating that the difference is statistically significant with a p-value of 0.00000.
-    \item The mean pm25 concentration also decreased from 15.11 in 2015 to 12.98 in 2020, with a p-value of 0.00925.
-    \item The mean no2 concentration showed a notable decrease from 18.16 in 2015 to 14.20 in 2020, with a p-value of 0.00000.
-    \item The pm25 temporal coverage increased slightly from 86.04 in 2015 to 89.17 in 2020, with a p-value of 0.00783.
-\end{itemize}
+\noindent The table indicates there are improvements across all variables between 2015 and 2020. All p-values show that the differences are not by chance ($p < 0.05$) and that there is much variability between each variable. Further analysis is needed based on categorical data, such as region or population size.
+
 
 \newpage
