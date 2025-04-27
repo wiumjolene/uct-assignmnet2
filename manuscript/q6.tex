@@ -5,10 +5,65 @@ any evidence of effect modification.}
 
 \subsection{Question 6.a}
 \textit{Create either a single table or multiple tables to summarise the relationship
-between who\_region and highest air pollution exposure category you cre-
+between who\_region and highest air pollution exposure category you cre
 ated, grouped by population size category you created in Assignment 1.
 If you have more than 3 population size categories, use the first three categories
 for this analysis.}
+
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{llrrr}
+        \toprule
+        population & who\_region & 0 & 1 & prevalence \\
+        \midrule
+        0-500000 & 1\_Afr & 0 & 0 & 0 \\
+        0-500000 & 2\_Amr & 138 & 0 & 0 \\
+        0-500000 & 3\_Sear & 0 & 0 & 0 \\
+        0-500000 & 4\_Eur & 195 & 7 & 0.0347 \\
+        0-500000 & 5\_Emr & 0 & 0 & 0 \\
+        0-500000 & 7\_NonMS & 0 & 0 & 0 \\
+        \bottomrule
+    \end{tabular}
+\caption{Max air pollution exposure by WHO region (population size 0-500000).}
+\label{tab:pop500000}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{llrrr}
+        \toprule
+        population & who\_region & 0 & 1 & prevalence \\
+        \midrule
+        500000-1000000 & 1\_Afr & 0 & 0 & 0 \\
+        500000-1000000 & 2\_Amr & 6 & 0 & 0 \\
+        500000-1000000 & 3\_Sear & 0 & 0 & 0 \\
+        500000-1000000 & 4\_Eur & 24 & 1 & 0.0400 \\
+        500000-1000000 & 5\_Emr & 0 & 0 & 0 \\
+        500000-1000000 & 7\_NonMS & 0 & 0 & 0 \\
+        \bottomrule
+    \end{tabular}
+\caption{Max air pollution exposure by WHO region (population size 500000-1000000).}
+\label{tab:pop1000000}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{llrrr}
+        \toprule
+        population & who\_region & 0 & 1 & prevalence \\
+        \midrule
+        1000000-1500000 & 1\_Afr & 0 & 0 & 0 \\
+        1000000-1500000 & 2\_Amr & 4 & 0 & 0 \\
+        1000000-1500000 & 3\_Sear & 0 & 0 & 0 \\
+        1000000-1500000 & 4\_Eur & 5 & 1 & 0.1667 \\
+        1000000-1500000 & 5\_Emr & 0 & 1 & 1 \\
+        1000000-1500000 & 7\_NonMS & 0 & 0 & 0 \\
+        \bottomrule
+    \end{tabular}
+\caption{Max air pollution exposure by WHO region (population size 1000000-1500000).}
+\label{tab:pop1500000}
+\end{table}
 
 \subsection{Question 6.b.i}
 \textit{Investigate whether the relationship between who\_region and highest air pol-

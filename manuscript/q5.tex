@@ -12,8 +12,8 @@ In 2020, only four regions submitted $PM_{2.5}$ concentration data to the WHO.  
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{img/q5_bar_pm25_region.png}
-    \caption{$PM_{2.5}$ concentration by WHO region - 2020.}
+    \includegraphics[width=0.8\textwidth]{img/q5_bar_pm25_region2018.png}
+    \caption{$PM_{2.5}$ concentration by WHO region - 2018.}
     \label{fig:q5_bar_pm25_region}
 \end{figure}
 
@@ -25,22 +25,9 @@ In 2020, only four regions submitted $PM_{2.5}$ concentration data to the WHO.  
     \item \textit{In the 1\_Afr who\_region?}
 \end{itemize}
 
-\textit{Report your answers in written sentences (not just reporting number). Hint: refer to your descriptive table or make a new 2x2 table to help you answer this.}
+\textit{Report your answers in written sentences (not just reporting number). Hint: refer to your descriptive table or make a new 2x2 table to help you answer this.}\\
 
-
-% \begin{tabular}{lrrrrrrr}
-%     \toprule
-%     pm25\_cats & (1) 5 - & (2) 5 - 10 & (3) 10 - 15 & (4) 15 - 25 & (5) 25 - 30 & (6) 30 + & Total \\
-%     who\_region &  &  &  &  &  &  &  \\
-%     \midrule
-%     1\_Afr & 0 & 1 & 0 & 0 & 0 & 0 & 1 \\
-%     2\_Amr & 29 & 143 & 3 & 0 & 1 & 5 & 181 \\
-%     3\_Sear & 0 & 0 & 5 & 25 & 12 & 54 & 96 \\
-%     4\_Eur & 36 & 273 & 173 & 111 & 4 & 0 & 597 \\
-%     Total & 130 & 834 & 362 & 272 & 34 & 118 & 1750 \\
-%     \bottomrule
-%     \caption{Descriptive statistics for WHO regions overall and by year}
-% \end{tabular}\\
+Table \ref{tab:pm25_cats_by_region} shows the frequency of air pollution exposure categories by WHO region. 
 
 \begin{table}[ht]
     \centering
@@ -49,35 +36,124 @@ In 2020, only four regions submitted $PM_{2.5}$ concentration data to the WHO.  
         pm25\_cats & (1) 5 - & (2) 5 - 10 & (3) 10 - 15 & (4) 15 - 25 & (5) 25 - 30 & (6) 30 + & Total \\
         who\_region &  &  &  &  &  &  &  \\
         \midrule
-        1\_Afr & 0 & 1 & 0 & 0 & 0 & 0 & 1 \\
-        2\_Amr & 29 & 143 & 3 & 0 & 1 & 5 & 181 \\
-        3\_Sear & 0 & 0 & 5 & 25 & 12 & 54 & 96 \\
-        4\_Eur & 36 & 273 & 173 & 111 & 4 & 0 & 597 \\
-        Total & 130 & 834 & 362 & 272 & 34 & 118 & 1750 \\
-        \bottomrule
+        1\_Afr & 0 & 0 & 0 & 0 & 0 & 1 & 1 \\
+        2\_Amr & 17 & 124 & 22 & 7 & 0 & 0 & 170 \\
+        3\_Sear & 0 & 0 & 0 & 0 & 1 & 5 & 6 \\
+        4\_Eur & 24 & 122 & 240 & 136 & 16 & 11 & 549 \\
+        5\_Emr & 0 & 0 & 0 & 0 & 0 & 2 & 2 \\
+        7\_NonMS & 0 & 0 & 1 & 0 & 0 & 0 & 1 \\
+        Total & 41 & 246 & 263 & 143 & 17 & 19 & 729 \\
 \end{tabular}
-\caption{Descriptive statistics for WHO regions overall and by year}
+\caption{Frequency table of air pollution exposure categories by WHO region.}
+\label{tab:pm25_cats_by_region}
 \end{table}
 
 
 
 \begin{enumerate}
-    \item \textit{In the overall sample} The prevalence of the highest air pollution exposure category (30+) in the overall sample is 118/1750 = 6.74\%.
-    \item \textit{In the 4\_Eur who\_region?} The prevalence of the highest air pollution exposure category (30+) in the 4\_Eur region is 0/597 = 0\%.
-    \item \textit{In the 1\_Afr who\_region?} The prevalence of the highest air pollution exposure category (30+) in the 1\_Afr region is 0/1 = 0\%.
+    \item \textit{In the overall sample} The prevalence of the highest air pollution exposure category (30+) in the overall sample is 19/729 = 6.74\%.
+    \item \textit{In the 4\_Eur who\_region?} The prevalence of the highest air pollution exposure category (30+) in the 4\_Eur region is 11/549 = 2\%.
+    \item \textit{In the 1\_Afr who\_region?} The prevalence of the highest air pollution exposure category (30+) in the 1\_Afr region is 1/1 = 100\%.
 \end{enumerate}
 
 \subsection{Question 5.c}
-\textit{Calculate the prevalence ratio for the relationship between the highest air pol-
-lution exposure category you created and who\_region, specifically the 4\_Eur
+\textit{Calculate the prevalence ratio for the relationship between the highest air pollution exposure category you created and who\_region, specifically the 4\_Eur
 and 1\_Afr regions. Interpret the prevalence ratio. 
-• Be sure to specify which region (4\_Eur or 1\_Afr) you are treating as the
-exposed and unexposed groups. Your outcome should be the highest air
-pollution exposure category you created.
-• You can calculate the confidence interval in the software or by hand using
-the formula provided in the measures of association slides}
+\begin{enumerate}
+    \item Be sure to specify which region (4\_Eur or 1\_Afr) you are treating as the exposed and unexposed groups. Your outcome should be the highest air
+    pollution exposure category you created.
+    \item You can calculate the confidence interval in the software or by hand using the formula provided in the measures of association slides
+\end{enumerate}}
 
 
+\begin{itemize}
+    \item \textit{4\_Eur region} is the unexposed group (2\%).
+    \item \textit{1\_Afr region} is the exposed group (100\%).  
+\end{itemize}
 
+
+\[
+\text{Prevalence Ratio (PR)} = \frac{1.0}{0.020} = 50
+\]
+
+
+\paragraph*{Step 1: Estimate the standard error}
+
+
+\[
+SE_{\log PR} = \sqrt{ \frac{b}{a(a+b)} + \frac{d}{c(c+d)} }
+\]
+
+where:
+\begin{itemize}
+    \item \( a \) = number of events in the exposed group,
+    \item \( b \) = number of non-events in the exposed group,
+    \item \( c \) = number of events in the unexposed group,
+    \item \( d \) = number of non-events in the unexposed group.
+\end{itemize}
+
+
+\[
+SE_{\log PR} = \sqrt{ \frac{0}{1(1+0)} + \frac{538}{11(11+538)} }
+\]
+
+\[
+SE_{\log PR} = \sqrt{ 0.089 }
+\]
+
+\[
+SE_{\log PR} = 0.298
+\]
+
+\paragraph*{Step 2: Calculate the confidence interval for the prevlance ratio}
+
+\[
+\log(PR) \pm Z \times SE_{\log PR}
+\]
+\begin{center}
+OR
+\end{center}
+\[
+(L, U) = \left( \log(PR) - Z \times SE_{\log PR},\ \log(PR) + Z \times SE_{\log PR} \right)
+\]
+
+
+where:
+\begin{itemize}
+    \item \( Z \) is the Z-score for the desired confidence level (1.96) at the significance level 0.05.
+    \item \( L \) and \( U \) are the lower and upper bounds of the confidence interval.
+\end{itemize}
+
+\[
+(L, U) = \left( \log(PR) - Z \times SE_{\log PR},\ \log(PR) + Z \times SE_{\log PR} \right)
+\]
+
+\[
+(L, U) = \left( \log(50) - 1.96 \times 0.298,\ \log(50) + 1.96 \times 0.298 \right)
+\]
+
+\[
+(L, U) = \left( 3.912 - 0.584,\ 3.912 + 0.584 \right)
+\]
+
+\[
+(L, U) = \left( 3.328,\ 4.496 \right)
+\]
+
+\paragraph*{Step 3: Convert the confidence interval from step 2 back into the scale used for reporting the PR.}
+
+\[
+\left( e^{\log(PR) - Z \times SE_{\log PR}},\ e^{\log(PR) + Z \times SE_{\log PR}} \right)
+\]
+
+\[
+(L, U) = \left( e^{3.328},\ e^{4.496} \right)
+\]
+
+\[
+(L, U) = \left( 27.92,\ 89.60 \right)
+\]
+
+Therefore, the 95\% confidence interval for the prevalence ratio of 50 is (27.92, 89.60). This is a very wide confidence interval.
 
 \newpage
