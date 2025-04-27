@@ -1,0 +1,38 @@
+\section[q2]{Question 2}
+\textit{Examine whether there is an association between year (as a categorical variable, pick
+two years to perform the analysis) and pm25\_concentration.}
+
+\subsection{Question 2.a}
+\textit{Is this an analysis of paired or independent samples? Explain your answer.}\\
+
+\noindent Independent samples. The locations included in each year differ. There are 288 more cities in 2020 than in 2015. If the question related to picking one city and comparing the pm25 in 2015 and 2020, then it would be a paired sample.
+
+
+
+\subsection{Question 2.b}
+\textit{Check assumptions and apply an appropriate statistical test to test whether
+there is a difference in pm25\_concentration across the two years you have
+selected.}
+
+\paragraph*{Step 1: Check for Normality}
+To determine if the data is parametric or non-parametric, the Shapiro-Wilk test was used to check for normality.
+
+\begin{itemize}
+    \item $H_0$: The population is normally distributed.
+    \item $H_A$: The population is not normally distributed.
+\end{itemize}
+
+The results of the Shapiro-Wilk test indicate that both $p$-values are very small ($p < 0.05$). Therefore, we reject $H_0$ and conclude that the data is not normally distributed.
+
+\paragraph*{Step 2: Apply the Mann-Whitney U Test}
+Since the data is not normally distributed, the Mann-Whitney U test was used to compare the two years.
+
+\begin{itemize}
+    \item $H_0$: $\mu_1 = \mu_2$ (The medians of the two years are equal.)
+    \item $H_A$: $\mu_1 \neq \mu_2$ (The medians of the two years are not equal.)
+\end{itemize}
+
+The Mann-Whitney U test yielded a $p$-value of $< 0.05$. Thus, we reject $H_0$ and conclude that there is a significant difference in pm25\_concentration between the two years.
+
+
+\newpage

@@ -1,0 +1,115 @@
+\documentclass{article}
+\usepackage{booktabs}            % For better looking tables
+\usepackage[a4paper, margin=1in]{geometry}  % Adjusts margins
+\usepackage{titling}             % For cover page formatting
+\usepackage{caption}             % Allows caption alignment
+\usepackage{graphicx}            % For including images
+\usepackage{listings}            % For source code listings
+\usepackage{xcolor}              % For color definitions
+\usepackage{enumitem}            % For customizing list formatting
+\usepackage[hidelinks]{hyperref} % For clickable links and TOC
+\usepackage{float}               % To force figure placement using [H]
+\usepackage{fancyhdr}            % For custom headers/footers
+\usepackage{amsmath, amssymb}    % For math symbols
+\usepackage[acronym]{glossaries}
+
+% \makeglossaries
+
+
+% Fancyhdr setup for a professional header/footer
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textbf{PPH7021F - Assignment 2}}
+
+\rhead{Jolene Wium}
+\cfoot{\thepage}
+
+% Listings settings for Python code
+\lstset{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    numbers=left,
+    numberstyle=\tiny,
+    stepnumber=1,
+    numbersep=10pt,
+    backgroundcolor=\color{white},
+    frame=single,
+    breaklines=true,
+    postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
+
+% Listings settings for Python code
+\lstset{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    numbers=left,
+    numberstyle=\tiny,
+    stepnumber=1,
+    numbersep=10pt,
+    backgroundcolor=\color{white},
+    frame=single,
+    breaklines=true,
+    postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
+
+% Allow numbering down to paragraphs (simulate subsubsubsections)
+\setcounter{secnumdepth}{4}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{3cm}
+            
+        \Huge
+        \textbf{PPH7021F Assignment 2}
+            
+        \vspace{1.5cm}
+
+        \huge
+            
+        \textbf{Jolene Wium}                      % <-- author
+        \vspace{1cm}
+        \Large
+
+
+        WMXJOL001
+            
+        % \vfill
+        
+        \texttt{WMXJOL001\_dataset.csv}
+            
+        \vspace{1cm}
+            
+        % \includegraphics[width=0.4\textwidth]{logo-hkust.png}
+        % \\
+        
+        \Large
+        
+        \today
+            
+    \end{center}
+\end{titlepage}
+\newpage
+\newpage
+\input{plagiarism.tex}
+\newpage
+% Table of Contents
+\tableofcontents
+\newpage
+
+% List of Tables, Figures, and Listings
+\listoftables
+\newpage
+\listoffigures
+\newpage
+\lstlistoflistings
+\newpage
+\input{q1.tex}
+\input{q2.tex}
+\input{q3.tex}
+\input{q4.tex}
+\input{q5.tex}
+\input{q6.tex}
+
+\end{document}
